@@ -1,0 +1,7 @@
+analysis,purpose,current_status,decision_note
+response confound triangulation,matched/factorial performance-monitoring analysis,COMPLETED_ROBUSTNESS,Completed outputs are public under results/robustness/response_confound_triangulation.
+trial-level cross-fitted RL-EEG,within-subject adjusted computational-to-EEG analysis,COMPLETED_ROBUSTNESS,Completed outputs are public under results/robustness/trial_level_crossfitted_rl_eeg.
+response reliability,split-half and temporal stability of response signatures,COMPLETED_ROBUSTNESS,Completed outputs are public under results/robustness/response_reliability.
+post-error adaptation,post-error behavioral/neural extension,STOPPED_BY_DESIGN,Older targeted analyses did not justify a new final branch; not required for current claims.
+response-marker sensitivity,alternative response-marker timing sensitivity,STOPPED_BY_DESIGN,Existing response-marker timing consistency is effectively exact; no additional final analysis was required.
+direct marker-locked re-extraction,alternative marker-locked feature extraction,STOPPED_BY_DESIGN,Not advanced because existing response timing alignment was already sufficient for the final response branch.

@@ -1,0 +1,13 @@
+stage_id	stage	candidate_scope	decision_status	decision_basis	evidence_path
+EEG-STAGE-01	EEG provenance and alignment	processed continuous EEG + event streams	ADVANCED	processing boundary and event alignment established	docs/eeg_preprocessing_provenance.md
+EEG-STAGE-02	Feature development	ERP, time-frequency, and derived features	ADVANCED_SELECTIVELY	canonical cue block and response signatures defined	results/model_development/
+EEG-STAGE-03	Historical decoding and association development	early multivariate and participant-level association analyses	SUPERSEDED	feature, alignment, or inferential limitations; stricter final analyses replaced them	results/model_development/
+EEG-STAGE-04	Canonical cue feature table	37 fixed cue-window features + cross-fitted RL	PRIMARY_INPUT	leakage exclusions and one-to-one alignment	results/cue_feature_spec/
+EEG-STAGE-05	Cue-window action prediction	behavioral/computational references + cue EEG	PRIMARY_NULL	no detectable held-out EEG increment	results/cue_action/
+EEG-STAGE-06	Cue-window RL-state encoding	policy, actor-value difference, and control targets	PRIMARY_NULL	no held-out encoding improvement	results/cue_encoding/
+EEG-STAGE-07	Response-locked performance monitoring	six fixed response signatures	ADVANCED	strong response-locked contrasts	results/response_monitoring/
+EEG-STAGE-08	Between-participant RL–EEG association	18 fixed tests	PRIMARY_SUPPORTIVE	Freedman–Lane nuisance-adjusted association analysis	results/between_participant_rl_eeg_associations/
+EEG-STAGE-09	Cue stability robustness	repeated partitions + richer lagged history	ROBUSTNESS	cue null stable	results/robustness/repeated_partition_cue_stability/
+EEG-STAGE-10	Response robustness	confound triangulation + reliability	ROBUSTNESS	performance-monitoring interpretation retained; reliability heterogeneous	results/robustness/response_confound_triangulation/
+EEG-STAGE-11	Expanded association family	33-test family	ROBUSTNESS	smaller robust core survives	results/robustness/expanded_between_participant_associations/
+EEG-STAGE-12	Trial-level RL–EEG analysis	cross-fitted trial-level analysis	ROBUSTNESS_NULL	no multiplicity-corrected trial-level association	results/robustness/trial_level_crossfitted_rl_eeg/

@@ -1,0 +1,23 @@
+id,family,name,predictors_or_definition,status,rationale
+E0,action prediction,history,H,canonical final,Baseline causal/online behavioral history.
+E1,action prediction,history+policy,H + p_press,canonical final,Policy increment over history.
+E2,action prediction,history+actor/control,H + actor_qdiff + control,canonical final,companion behavioral-computational study-aligned RL baseline for primary cue-EEG incremental test.
+E3,action prediction,history+cue ERP,H + 30 ERP,canonical final,ERP beyond history.
+E4,action prediction,history+cue TF,H + 4 TF,canonical final,TF beyond history.
+E5,action prediction,history+cue entropy,H + 3 entropy-derived,canonical final,Entropy beyond history.
+E6,action prediction,history+combined cue EEG,H + 37 EEG,canonical final,Combined EEG beyond history.
+E7,action prediction,history+policy+combined cue EEG,H + p_press + 37 EEG,canonical final,EEG beyond history+policy.
+E8,action prediction,history+actor/control+combined cue EEG,H + actor_qdiff + control + 37 EEG,canonical final,Primary EEG increment conditional on actor/control representation.
+E9,action prediction,history+policy+actor/control+combined cue EEG,H + p_press + actor_qdiff + control + 37 EEG,canonical final,Full decomposition model.
+N0,RL-state encoding,history,H,canonical final,Ridge baseline for each RL target.
+N1,RL-state encoding,history+ERP,H + 30 ERP,canonical final,ERP incremental encoding.
+N2,RL-state encoding,history+TF,H + 4 TF,canonical final,TF incremental encoding.
+N3,RL-state encoding,history+entropy,H + 3 entropy-derived,canonical final,Entropy incremental encoding.
+N4,RL-state encoding,history+combined EEG,H + 37 EEG,canonical final,Combined EEG incremental encoding.
+R1,response signature,ERN,"FA minus Go-hit, Fz 50–150 ms",canonical final,Performance-monitoring signature; error status and target context are confounded.
+R2,response signature,Pe,"FA minus Go-hit, Cz 200–400 ms",canonical final,Same contrast caveat.
+R3,response signature,theta,"FA minus Go-hit, Fz 0–200 ms",canonical final,TF response signature.
+R4,response signature,beta,"FA minus Go-hit, Cz 200–500 ms",canonical final,TF response signature.
+R5,response signature,entropy theta fraction,"FA minus Go-hit, global theta fraction",canonical final,Derived TF-composition signature.
+R6,response signature,entropy beta fraction,"FA minus Go-hit, global beta fraction",canonical final,Derived TF-composition signature.
+B1-B18,RL–EEG association analysis,6 response signatures × 3 RL summaries,one RL predictor per model + group nuisance,canonical final inference,"Freedman-Lane permutation, BH across fixed 18 tests. Separate predictor models do not establish unique specificity among RL states."

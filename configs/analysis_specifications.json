@@ -1,0 +1,199 @@
+{
+  "paper": "EEG-computational study",
+  "rl_variant": "M6",
+  "cue_action_primary": {
+    "rl_variant": "M6",
+    "seed": 2026,
+    "k": 5,
+    "folds": null,
+    "models": [
+      "E0",
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7",
+      "E8",
+      "E9"
+    ],
+    "max_rl_draws": 300,
+    "deadline_ms": 700.0,
+    "Cs": [
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.03,
+      0.1,
+      0.3,
+      1.0,
+      3.0,
+      10.0
+    ],
+    "inner_k": 4,
+    "include_group": false,
+    "n_bootstrap": 5000,
+    "code_references": {
+      "nested_rl": "shared/rl/nested_crossvalidated_latent_generation.py",
+      "rl_core": "shared/rl/actor_control_model_family.py",
+      "ddm_core": "shared/ddm/one_boundary_diffusion.py",
+      "action_benchmark": "shared/action/action_occurrence_benchmark.py"
+    },
+    "input_scope": "Controlled trial-level behavioral data, cross-fitted RL outputs, and canonical cue-window EEG features."
+  },
+  "cue_encoding_primary": {
+    "rl_variant": "M6",
+    "seed": 2026,
+    "k": 5,
+    "folds": null,
+    "targets": [
+      "logit_p_press",
+      "actor_qdiff_current",
+      "control_current"
+    ],
+    "models": [
+      "N0",
+      "N1",
+      "N2",
+      "N3",
+      "N4"
+    ],
+    "max_rl_draws": 300,
+    "deadline_ms": 700.0,
+    "alphas": [
+      0.0001,
+      0.001,
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0
+    ],
+    "inner_k": 4,
+    "include_group": false,
+    "n_bootstrap": 10000,
+    "strict_outer_fold_definition": "Same existing RL outer folds. RL targets for both train and test subjects are regenerated from that fold's train-only RL posterior.",
+    "primary_predictor_definition": "Nominal cue-window EEG predictors only; no target-locked or response-locked EEG. Nominal pre-target labels do not establish strictly prospective temporal support after non-causal filtering.",
+    "baseline_definition": "Task design + strictly lagged behavioral history from companion behavioral-computational study.",
+    "contrast_sign": "Positive MSE gain = EEG lowers held-out standardized target MSE.",
+    "code_references": {
+      "nested_rl": "shared/rl/nested_crossvalidated_latent_generation.py",
+      "rl_core": "shared/rl/actor_control_model_family.py",
+      "ddm_core": "shared/ddm/one_boundary_diffusion.py",
+      "cue_action_benchmark": "code/02_primary_cue/cue_action_prediction.py"
+    },
+    "input_scope": "Controlled trial-level behavioral data, cross-fitted RL outputs, and canonical cue-window EEG features."
+  },
+  "note": "Cue analyses use nominal cue-window features. Corrected participant-level RL–EEG inference uses Freedman–Lane residual permutation. Public results are aggregate; participant-level EEG and behavioral data are not distributed.",
+  "response_marker_qc": {
+    "status": "aggregate internal event-alignment QC included",
+    "n_responded_trials": 10509,
+    "n_matched_response_markers": 10509,
+    "marker_match_rate": 1.0,
+    "median_absolute_discrepancy_ms": 0.0,
+    "p95_absolute_discrepancy_ms": 5.6843418860808015e-11,
+    "pct_abs_error_le_4ms": 100.0,
+    "interpretation": "Agreement with the nearest response marker in the imported event list; internal timing-consistency QC, not independent validation of behavioral RT accuracy."
+  },
+  "cohort": {
+    "n_participants": 40,
+    "n_high_risk": 20,
+    "n_low_risk": 20,
+    "handedness": {
+      "right": 36,
+      "left": 4
+    },
+    "selection": "Adjusted BART top 20% and bottom 20% strata, with random selection from the extreme groups, following the published study logic; 20 participants per group in the present analysis."
+  },
+  "eeg_preprocessing_provenance": {
+    "current_project_ica": false,
+    "note": "No ICA step was applied to the EEG data used in the present analysis. The ICA step reported in the source publication pertains to that publication's preprocessing pipeline.",
+    "temporal_support": "Recovered FIR and time-frequency pipelines use non-causal/zero-phase processing; cue windows are nominally pre-target, not proof of strictly leakage-free prospective information."
+  },
+  "package_status": "computational analyses and aggregate reporting frozen; publication metadata pending",
+  "rl_train_fold_sampling": {
+    "variant": "M6",
+    "primary_seed": 2026,
+    "outer_folds": 5,
+    "chains": 4,
+    "cores": 4,
+    "tune_per_chain": 600,
+    "draws_per_chain": 600,
+    "target_accept": 0.9,
+    "fold_seeds": [
+      2123,
+      2220,
+      2317,
+      2414,
+      2511
+    ],
+    "diagnostics_table": "results/rl_provenance/actor_control_fold_posterior_diagnostics.csv"
+  },
+  "response_monitoring_primary": {
+    "seed": 2026,
+    "min_trial_thresholds": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "primary_min_trials": 10,
+    "n_permutations": 10000,
+    "n_bootstrap": 5000,
+    "rl_provenance": "canonical nested/cross-fitted LATENTS only; embedded EEG-table RL columns ignored",
+    "trial_mapping": "EEG trial_index - 1 = canonical RL trial_index",
+    "primary_neural_signatures": {
+      "erp_ern": [
+        "ERP",
+        "resp_ern_fz_50_150_mean_uv"
+      ],
+      "erp_pe": [
+        "ERP",
+        "resp_pe_cz_200_400_mean_uv"
+      ],
+      "tf_theta": [
+        "TF",
+        "resp_theta_fz_0_200"
+      ],
+      "tf_beta": [
+        "TF",
+        "resp_beta_cz_200_500"
+      ],
+      "entropy_theta": [
+        "ENTROPY",
+        "resp_global_theta_fraction"
+      ],
+      "entropy_beta": [
+        "ENTROPY",
+        "resp_global_beta_fraction"
+      ]
+    },
+    "primary_rl_predictors": [
+      "mean_p_press",
+      "mean_actor_qdiff_current",
+      "mean_control_current"
+    ],
+    "association_status": "Supportive individual-differences analysis; corrected Freedman–Lane results are the authoritative participant-level association inference.",
+    "rl_input": "Cross-fitted M6 trial-level latents generated by shared/rl/nested_crossvalidated_latent_generation.py.",
+    "response_contrast_inference": "Participant-level FA-minus-Go-hit performance-monitoring contrasts; 5,000 participant bootstraps, 10,000 sign-flip permutations, BH-FDR across the fixed six-signature family.",
+    "reporting_name": "response-locked performance-monitoring primary family",
+    "interpretation_constraint": "FA-minus-Go-hit differs in both error status and NoGo/Go target context; not a pure error-specific contrast."
+  },
+  "between_participant_rl_eeg_associations": {
+    "seed": 2026,
+    "n_permutations": 10000,
+    "n_bootstrap": 5000,
+    "primary_family_size": 18,
+    "primary_analysis": "primary_group",
+    "permutation_method": "Freedman-Lane residual permutation; residuals restricted within group strata when group_high is a nuisance covariate",
+    "primary_fdr": "BH across fixed 6 neural signatures x 3 canonical RL predictors",
+    "diagnostics": "predictor VIF >=5 or design condition number >=30 flagged for collinearity",
+    "interpretation": "supportive between-participant association, not independent confirmation, causal evidence, or trial-level neural implementation",
+    "input_scope": "Participant-level response-signature summaries generated by code/03_primary_response/performance_monitoring_contrasts.py.",
+    "results_table": "results/between_participant_rl_eeg_associations/primary_18_tests.csv"
+  }
+}

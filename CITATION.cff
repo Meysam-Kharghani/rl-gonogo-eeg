@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the accompanying manuscript and this software release."
+title: "Separating incremental cue-window EEG prediction from response-locked performance monitoring in cued Go/NoGo"
+type: software
+authors:
+  - family-names: "Kharghani"
+    given-names: "Meysam"
+    email: "meysamkharghani@gmail.com"
+    affiliation: "Department of Cognitive Neuroscience, Faculty of Education and Psychology, University of Tabriz, Tabriz, Iran"
+    orcid: "https://orcid.org/0009-0004-9527-756X"
+  - family-names: "Jafarian"
+    given-names: "Abolfazl"
+    email: "ajafarian331@gmail.com"
+    affiliation: "Department of Cognitive Neuroscience, Faculty of Education and Psychology, University of Tabriz, Tabriz, Iran"
+  - family-names: "Farkhondeh Tale Navi"
+    given-names: "Farhad"
+    email: "farkhondeh_f@tabrizu.ac.ir"
+    affiliation: "Department of Cognitive Neuroscience, Faculty of Education and Psychology, University of Tabriz, Tabriz, Iran"
+    orcid: "https://orcid.org/0000-0001-9174-5902"
+  - family-names: "Mehdizadeh Fanid"
+    given-names: "Leila"
+    email: "L-mehdizadeh@tabrizu.ac.ir"
+    affiliation: "Department of Cognitive Neuroscience, Faculty of Education and Psychology, University of Tabriz, Tabriz, Iran"
+    orcid: "https://orcid.org/0000-0003-4935-4080"
+version: "1.0.1"
+date-released: "2026-10-25"
+license: MIT
+keywords:
+  - reinforcement learning
+  - Go/NoGo
+  - EEG
+  - performance monitoring
+  - computational neuroscience

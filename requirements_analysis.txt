@@ -1,0 +1,11 @@
+numpy==2.3.5
+pandas==2.3.3
+scipy==1.16.3
+scikit-learn==1.8.0
+matplotlib==3.10.8
+statsmodels==0.14.6
+patsy==1.0.2
+openpyxl==3.1.5
+mne==1.11.0
+pymc==5.27.0
+arviz==0.23.0
