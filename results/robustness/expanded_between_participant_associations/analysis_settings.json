@@ -1,0 +1,29 @@
+{
+  "features": [
+    "resp_ern_fz_50_150_mean_uv",
+    "resp_ern_fz_50_150_min_uv",
+    "resp_ern_fz_50_150_max_uv",
+    "resp_pe_fz_200_400_mean_uv",
+    "resp_pe_fz_200_400_max_uv",
+    "resp_pe_cz_200_400_mean_uv",
+    "resp_pe_cz_200_400_max_uv",
+    "resp_theta_fz_0_200",
+    "resp_theta_fz_0_400",
+    "resp_theta_cz_0_400",
+    "resp_beta_cz_200_500"
+  ],
+  "predictors": [
+    "mean_p_press",
+    "mean_actor_qdiff_current",
+    "mean_control_current"
+  ],
+  "n_tests": 33,
+  "nuisance": [
+    "group_high"
+  ],
+  "permutation": "Freedman-Lane within group",
+  "n_perm": 10000,
+  "n_boot": 5000,
+  "BH_family": 33,
+  "min_trials": 10
+}

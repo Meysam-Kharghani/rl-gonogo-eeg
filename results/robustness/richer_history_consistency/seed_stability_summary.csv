@@ -1,0 +1,9 @@
+model,reference,label,n_seeds,mean_delta,min_delta,max_delta,positive_seeds
+R10,R0,total RL beyond richer lagged behavioral history,10,0.3217403532546019,0.04124948209657901,0.5404757977619614,10
+R6,R0,combined cue EEG beyond richer lagged behavioral history,10,-0.33426692662292057,-0.644595536300488,-0.1454990830675012,0
+R7,R1,combined cue EEG beyond richer lagged behavioral history+policy,10,-0.29453815365089586,-0.7377435716097015,-0.106705144145117,0
+R8,R2,combined cue EEG beyond richer lagged behavioral history+actor/control,10,-0.3889452513524893,-0.5927920590145664,-0.2569285794790591,0
+R9,R10,combined cue EEG beyond richer lagged behavioral history+fullRL,10,-0.34046895810814093,-0.9071820798383478,-0.13187617078432864,0
+R9,R6,total RL beyond richer lagged behavioral history+EEG,10,0.31553832176938157,-0.020883732674882794,0.4684121370601552,9
+R9,R7,actor/control beyond richer lagged behavioral history+policy+EEG,10,0.0942449649109513,-0.11841494354213004,0.16232980143176548,8
+R9,R8,policy beyond richer lagged behavioral history+actor/control+EEG,10,0.07306169212801894,-0.22251131713389719,0.23323925588901878,8

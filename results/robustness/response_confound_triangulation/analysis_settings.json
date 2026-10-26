@@ -1,0 +1,32 @@
+{
+  "primary_response_features": [
+    "resp_ern_fz_50_150_mean_uv",
+    "resp_ern_fz_50_150_min_uv",
+    "resp_ern_fz_50_150_max_uv",
+    "resp_pe_fz_200_400_mean_uv",
+    "resp_pe_fz_200_400_max_uv",
+    "resp_pe_cz_200_400_mean_uv",
+    "resp_pe_cz_200_400_max_uv",
+    "resp_theta_fz_0_200",
+    "resp_theta_fz_0_400",
+    "resp_theta_cz_0_400",
+    "resp_beta_cz_200_500"
+  ],
+  "rt_calipers_sd": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "block_size": 0,
+  "exact_match": [
+    "subject_id",
+    "cue_type"
+  ],
+  "n_perm": 10000,
+  "n_bootstrap": 10000,
+  "base_seed": 2026,
+  "seed_derivation": "sha256_stable_subseed_v1",
+  "erp_source_sha256": "f7b98ce1e93527f9d21187718570baff37997d127d631193a133f4b8ba9884f9",
+  "time_frequency_source_sha256": "d4c65ef6f70c2a19894c153c520449058802cdfdd0ab6370dabc8a09bd9f0e0d",
+  "interpretation": "performance monitoring; not pure error identification"
+}

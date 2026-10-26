@@ -1,0 +1,11 @@
+fold,split,offset,matched_fraction,cue_match_fraction,action_match_fraction,score
+0,train,0.0,1.0,1.0,1.0,1.0
+0,test,0.0,1.0,1.0,1.0,1.0
+1,train,0.0,1.0,1.0,1.0,1.0
+1,test,0.0,1.0,1.0,1.0,1.0
+2,train,0.0,1.0,1.0,1.0,1.0
+2,test,0.0,1.0,1.0,1.0,1.0
+3,train,0.0,1.0,1.0,1.0,1.0
+3,test,0.0,1.0,1.0,1.0,1.0
+4,train,0.0,1.0,1.0,1.0,1.0
+4,test,0.0,1.0,1.0,1.0,1.0

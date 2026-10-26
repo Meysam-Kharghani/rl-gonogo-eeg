@@ -1,0 +1,7 @@
+signature,feature,response_rows,missing_fraction_response
+erp_ern,resp_ern_fz_50_150_mean_uv,10509,0.0
+erp_pe,resp_pe_cz_200_400_mean_uv,10509,0.0
+tf_theta,resp_theta_fz_0_200,10509,0.0
+tf_beta,resp_beta_cz_200_500,10509,0.0
+entropy_theta,resp_global_theta_fraction,10509,0.0
+entropy_beta,resp_global_beta_fraction,10509,0.0

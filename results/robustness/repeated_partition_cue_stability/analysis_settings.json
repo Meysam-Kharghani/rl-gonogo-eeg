@@ -1,0 +1,20 @@
+{
+  "seeds": [
+    2026,
+    7777,
+    907984491,
+    992760415,
+    310133145,
+    916666921,
+    1605299568,
+    261439300,
+    1572605367,
+    1750612657
+  ],
+  "analysis_python": "<RL_PYTHON>",
+  "rl_out": "controlled_inputs/rl_crossvalidated_posteriors",
+  "max_rl_draws": 300,
+  "n_bootstrap": 2000,
+  "status": "stability extension; seed2026 remains historical primary",
+  "public_path_normalization_note": "Environment-specific paths from the executed run were replaced by public package-relative or controlled-input references; numerical settings/results are unchanged."
+}

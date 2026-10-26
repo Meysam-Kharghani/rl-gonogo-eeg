@@ -1,0 +1,40 @@
+{
+  "source_definition": "Nearest response marker to reconstructed response onset (target onset + behavioral RT); upstream match window <=150 ms.",
+  "n_trial_rows_total": 15200,
+  "n_responded_trials": 10509,
+  "n_matched_response_markers": 10509,
+  "n_unmatched_responded_trials": 0,
+  "marker_match_rate_among_responded": 1.0,
+  "n_participants_with_responded_trials": 40,
+  "n_participants_with_matched_markers": 40,
+  "signed_error_ms": {
+    "n": 10509,
+    "median_ms": 0.0,
+    "q1_ms": 0.0,
+    "q3_ms": 0.0,
+    "p95_ms": 5.6843418860808015e-11,
+    "max_ms": 1.1368683772161603e-10
+  },
+  "absolute_error_ms": {
+    "n": 10509,
+    "median_ms": 0.0,
+    "q1_ms": 0.0,
+    "q3_ms": 0.0,
+    "p95_ms": 5.6843418860808015e-11,
+    "max_ms": 1.1368683772161603e-10
+  },
+  "participant_median_absolute_error_ms_distribution": {
+    "n": 40,
+    "median_ms": 0.0,
+    "q1_ms": 0.0,
+    "q3_ms": 0.0,
+    "p95_ms": 0.0,
+    "max_ms": 0.0
+  },
+  "pct_abs_error_le_4ms": 100.0,
+  "pct_abs_error_le_8ms": 100.0,
+  "pct_abs_error_le_10ms": 100.0,
+  "pct_abs_error_le_20ms": 100.0,
+  "pct_abs_error_le_40ms": 100.0,
+  "pct_abs_error_le_50ms": 100.0
+}

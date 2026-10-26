@@ -1,0 +1,28 @@
+{
+  "primary_features": [
+    "resp_ern_fz_50_150_mean_uv",
+    "resp_ern_fz_50_150_min_uv",
+    "resp_ern_fz_50_150_max_uv",
+    "resp_pe_fz_200_400_mean_uv",
+    "resp_pe_fz_200_400_max_uv",
+    "resp_pe_cz_200_400_mean_uv",
+    "resp_pe_cz_200_400_max_uv",
+    "resp_theta_fz_0_200",
+    "resp_theta_fz_0_400",
+    "resp_theta_cz_0_400",
+    "resp_beta_cz_200_500"
+  ],
+  "secondary_features": [
+    "resp_global_theta_fraction",
+    "resp_global_beta_fraction"
+  ],
+  "thresholds": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "reps": 2000,
+  "seed": 2026,
+  "temporal_sensitivity": "within-condition trial-order halves; no assumed blocks"
+}
