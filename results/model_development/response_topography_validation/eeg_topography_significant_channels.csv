@@ -1,0 +1,8 @@
+feature,contrast,n_channels_tested,n_channels_q_lt_05,best_channel,best_channel_mean_difference,best_channel_p,best_channel_q,positive_channels,negative_channels
+response_pe_mean_200_400,nogo_fa_minus_go_hit,19,14,Cz,5.851880686575118,2.1214909617368804e-09,2.491342364223004e-08,"Cz,Pz,P4,P3,C4,Fz,O1,C3,F4,O2,T6,F3,T5,T3",
+response_ern_mean_50_150,nogo_fa_minus_go_hit,19,12,Fz,-4.57580966202483,1.4156421681195032e-07,2.6897201194270563e-06,,"Fz,T4,F4,C4,Cz,F3,F8,T3,Fp2,C3,F7,P4"
+response_theta_logpower_0_400,nogo_fa_minus_go_hit,19,11,Fz,0.4154904007278233,1.4524839237214032e-07,2.7597194550706662e-06,"Fz,F3,Cz,C3,F4,F8,Fp1,Fp2,C4,F7,Pz",
+response_ern_min_50_150,nogo_fa_minus_go_hit,19,11,Fz,-5.09164133311171,3.5511892120606906e-07,6.747259502915312e-06,,"Fz,F4,C4,Cz,F3,F8,T4,C3,Fp2,T3,F7"
+target_late_positive_mean_400_470,nogo_cr_minus_nogo_fa,19,11,C3,4.510493866543601,7.641003152392313e-06,0.0001451790598954,"C3,Pz,Fz,Cz,C4,F4,P4,P3,T3,T5,T4",
+response_beta_logpower_200_500,nogo_fa_minus_go_hit,19,9,Cz,-0.1562445826502229,4.099997535362104e-05,0.0007789995317187,,"Cz,P3,P4,T6,Pz,C4,T5,C3,Fz"
+target_p300_mean_250_500,nogo_cr_minus_nogo_fa,19,1,C3,2.5977868907535973,0.0004132727640074,0.007852182516141,C3,

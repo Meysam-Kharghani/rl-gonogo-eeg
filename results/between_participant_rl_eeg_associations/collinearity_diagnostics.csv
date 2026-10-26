@@ -1,0 +1,5 @@
+analysis,n_rows,max_predictor_vif,max_condition_number,n_collinearity_flags
+primary_group,18,1.9331926650497386,2.356411967010318,0
+sensitivity_group_behavior,18,1063.8869071942017,71.91681982221077,6
+sensitivity_group_winsor,18,2.022693082658548,2.4334970374915246,0
+sensitivity_none,18,1.0,1.0000000000000002,0

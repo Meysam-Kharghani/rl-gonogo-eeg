@@ -1,0 +1,13 @@
+mode,entropy_column,available_bands,n_bands,source_columns
+exact_lock_channel_window,cue_cz_200_500_spectral_entropy,"theta,beta",2,theta:cue_theta_cz_200_500;beta:cue_beta_cz_200_500
+exact_lock_channel_window,resp_c3_m400_0_spectral_entropy,"mu,beta",2,mu:resp_mu_c3_m400_0;beta:resp_beta_c3_m400_0
+exact_lock_channel_window,resp_c4_m400_0_spectral_entropy,"mu,beta",2,mu:resp_mu_c4_m400_0;beta:resp_beta_c4_m400_0
+exact_lock_channel_window,resp_cz_m400_0_spectral_entropy,"mu,beta",2,mu:resp_mu_cz_m400_0;beta:resp_beta_cz_m400_0
+lock_channel_allwindows,cue_cz_allwindows_spectral_entropy,"theta,beta",2,theta:cue_theta_cz_200_500;beta:cue_beta_cz_200_500
+lock_channel_allwindows,resp_c3_allwindows_spectral_entropy,"mu,beta",2,mu:resp_mu_c3_m400_0;beta:resp_beta_c3_m400_0
+lock_channel_allwindows,resp_c4_allwindows_spectral_entropy,"mu,beta",2,mu:resp_mu_c4_m400_0;beta:resp_beta_c4_m400_0
+lock_channel_allwindows,resp_cz_allwindows_spectral_entropy,"theta,mu,beta",3,"theta:resp_theta_cz_0_400;mu:resp_mu_cz_m400_0;beta:resp_beta_cz_m400_0,resp_beta_cz_200_500"
+lock_channel_allwindows,target_cz_allwindows_spectral_entropy,"theta,beta",2,theta:target_theta_cz_200_500;beta:target_beta_cz_250_500
+lock_global,cue_global_spectral_entropy,"theta,alpha,beta",3,"theta:cue_theta_fz_200_500,cue_theta_cz_200_500;alpha:cue_alpha_pz_200_500;beta:cue_beta_cz_200_500"
+lock_global,resp_global_spectral_entropy,"theta,mu,beta",3,"theta:resp_theta_fz_0_200,resp_theta_fz_0_400,resp_theta_cz_0_400;mu:resp_mu_c3_m400_0,resp_mu_cz_m400_0,resp_mu_c4_m400_0;beta:resp_beta_c3_m400_0,resp_beta_cz_m400_0,resp_beta_c4_m400_0,resp_beta_cz_200_500"
+lock_global,target_global_spectral_entropy,"theta,alpha,beta",3,"theta:target_theta_fz_200_500,target_theta_cz_200_500;alpha:target_alpha_pz_250_500;beta:target_beta_cz_250_500"

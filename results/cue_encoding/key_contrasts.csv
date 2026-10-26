@@ -1,0 +1,13 @@
+target,model,reference,label,n_subjects,mean_subject_mse_gain_z,bootstrap_ci_low,bootstrap_ci_high,positive_subjects,positive_folds,n_folds
+actor_qdiff_current,N1,N0,cue ERP beyond strictly lagged behavioral history,40,-0.001781810402852,-0.0041511941374804,7.617875706408722e-05,17,1,5
+actor_qdiff_current,N2,N0,cue TF beyond strictly lagged behavioral history,40,-0.0002407610155891,-0.0005805152295788,8.237040016990852e-05,16,2,5
+actor_qdiff_current,N3,N0,cue entropy beyond strictly lagged behavioral history,40,4.627591462058739e-05,-0.0004216735569045,0.0005106675468898,23,3,5
+actor_qdiff_current,N4,N0,combined cue EEG beyond strictly lagged behavioral history,40,-0.001974317337764,-0.0045299929333431,2.328188284656288e-05,14,1,5
+control_current,N1,N0,cue ERP beyond strictly lagged behavioral history,40,-0.0019805947534227,-0.0039718895521197,-0.0003517721244525,16,0,5
+control_current,N2,N0,cue TF beyond strictly lagged behavioral history,40,-0.000179643370691,-0.000351214516572,-1.922082477311466e-05,14,0,5
+control_current,N3,N0,cue entropy beyond strictly lagged behavioral history,40,-6.083260175319162e-05,-0.0002003075253942,7.060092711800729e-05,21,2,5
+control_current,N4,N0,combined cue EEG beyond strictly lagged behavioral history,40,-0.0020771452082444,-0.0036899918727102,-0.0006962848563019,14,0,5
+logit_p_press,N1,N0,cue ERP beyond strictly lagged behavioral history,40,-0.0002147394139643,-0.0006077249103139,0.0001446957820654,15,2,5
+logit_p_press,N2,N0,cue TF beyond strictly lagged behavioral history,40,-1.197147597211349e-05,-0.00012645047105,0.0001027642504846,19,2,5
+logit_p_press,N3,N0,cue entropy beyond strictly lagged behavioral history,40,-2.372511442388153e-05,-0.0001101102404025,6.058793091393446e-05,21,3,5
+logit_p_press,N4,N0,combined cue EEG beyond strictly lagged behavioral history,40,-0.000293037503518,-0.0006491487354817,3.846844150361035e-05,17,1,5

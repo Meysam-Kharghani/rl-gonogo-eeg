@@ -1,0 +1,62 @@
+{
+  "primary_eeg_timing": "nominal cue-window; nominally pre-target; non-causal filtering limits strict prospective interpretation",
+  "canonical_trial_mapping": "EEG trial_index - 1 = nested RL trial_index",
+  "rl_source": "controlled fold-specific M6 latent artifacts (not publicly distributed)",
+  "n_rows": 15200,
+  "n_subjects": 40,
+  "erp_features": [
+    "erp__cue_cnv_early_cz_100_200_mean_uv",
+    "erp__cue_cnv_early_cz_100_200_min_uv",
+    "erp__cue_cnv_early_cz_100_200_max_uv",
+    "erp__cue_cnv_early_cz_100_200_minlat_ms",
+    "erp__cue_cnv_early_cz_100_200_maxlat_ms",
+    "erp__cue_cnv_early_cz_100_200_slope_uv_per_s",
+    "erp__cue_cnv_late_cz_200_500_mean_uv",
+    "erp__cue_cnv_late_cz_200_500_min_uv",
+    "erp__cue_cnv_late_cz_200_500_max_uv",
+    "erp__cue_cnv_late_cz_200_500_minlat_ms",
+    "erp__cue_cnv_late_cz_200_500_maxlat_ms",
+    "erp__cue_cnv_late_cz_200_500_slope_uv_per_s",
+    "erp__cue_n2_fz_200_350_mean_uv",
+    "erp__cue_n2_fz_200_350_min_uv",
+    "erp__cue_n2_fz_200_350_max_uv",
+    "erp__cue_n2_fz_200_350_minlat_ms",
+    "erp__cue_n2_fz_200_350_maxlat_ms",
+    "erp__cue_n2_fz_200_350_slope_uv_per_s",
+    "erp__cue_n2_cz_200_350_mean_uv",
+    "erp__cue_n2_cz_200_350_min_uv",
+    "erp__cue_n2_cz_200_350_max_uv",
+    "erp__cue_n2_cz_200_350_minlat_ms",
+    "erp__cue_n2_cz_200_350_maxlat_ms",
+    "erp__cue_n2_cz_200_350_slope_uv_per_s",
+    "erp__cue_p3_cz_250_450_mean_uv",
+    "erp__cue_p3_cz_250_450_min_uv",
+    "erp__cue_p3_cz_250_450_max_uv",
+    "erp__cue_p3_cz_250_450_minlat_ms",
+    "erp__cue_p3_cz_250_450_maxlat_ms",
+    "erp__cue_p3_cz_250_450_slope_uv_per_s"
+  ],
+  "tf_features": [
+    "tf__cue_theta_fz_200_500",
+    "tf__cue_theta_cz_200_500",
+    "tf__cue_alpha_pz_200_500",
+    "tf__cue_beta_cz_200_500"
+  ],
+  "entropy_features": [
+    "entropy__cue_cz_200_500_spectral_entropy",
+    "entropy__cue_cz_200_500_theta_fraction",
+    "entropy__cue_cz_200_500_beta_fraction"
+  ],
+  "primary_exclusions": [
+    "all response-locked EEG",
+    "all target-locked EEG",
+    "embedded RL columns from EEG-derived tables",
+    "computational entropy/surprise columns",
+    "response/outcome metadata as EEG predictors"
+  ],
+  "secondary_only": [
+    "target-locked EEG",
+    "response-locked ERP/TF/entropy",
+    "cue allwindows/global entropy pending timing audit"
+  ]
+}

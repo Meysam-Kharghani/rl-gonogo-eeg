@@ -1,0 +1,2 @@
+subjects_processed,subjects_without_processing_errors,subjects_with_perfect_condition_sequence_alignment,condition_events_per_subject,response_event_count_min,response_event_count_max,interpretation
+40,40,40,380,135,351,condition-event sequence matched metadata for all subjects; response code 9 treated as a candidate marker pending timing QC
